@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="/favicon.jpg"
+<meta name="description" content="AREYOUEVENREAL" />
+<title>AREYOUEVENREAL/title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1"/>
+<meta name="text:Title font" content="Montserrat"/>
+<meta name="text:Content font" content="Montserrat"/>
+<meta name="color:Font color" content="#D3D3D3"/>
+<meta name="text:Copyright" content="AREYOUEVENREAL"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:600' rel='stylesheet' type='text/css'>
+
+<style>
+* {margin:0px 0px; padding:0px 0px;}
+a{
+    color:#222222;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+    color:#A9A9A9;
+}
+.clearFix{
+    clear:both;
+}
+body{
+    background-color:#000000;
+    color:#222222;
+    font-family:'Montserrat',Sans-Serif;
+    font-size:12px;
+}
+header{
+    left:7vw;
+    width:85.7vw;
+    height:20vh;
+}
+header.index{
+    top:6vh;
+     position:fixed;
+}
+header.permalink{
+    margin-top:10vh;
+    position:relative;
+}
+footer{
+    left:7vw;
+    width:85.7vw;
+    vertical-align:top;
+}
+footer.index{
+    position:fixed;
+    top:94vh;
+}
+footer.permalink{
+    margin-top:3vh;
+    position:relative;
+    padding-bottom:4vh;
+}
+main.index{
+    top:25vh;
+    left:7vw;
+    height:54vh;
+    position:absolute;
+    white-space:nowrap;
+}
+main.permalink{
+    position:relative;
+}
+/***********header***********/
+#title{
+    float:left;
+    vertical-align:top;
+    line-height:3em;
+    font-family:'Montserrat',Serif;
+    width:30vw;
+}
+#title a{
+    font-size:3em;
+     margin-right: 0.3em;
+}
+a#tagTitle{
+    font-size: 1.1em;
+    font-family:'Montserrat',Sans-Serif;
+}
+#pages{
+    float:right;
+    text-align:right;
+    list-style-type:none;
+    width:45vw;
+    margin-top:1.4em;
+    font-size:1.1em;
+}
+#pages li{
+    display:inline-block;
+    margin-left:0em;
+    margin-bottom:1em;
+    padding-right:0.1em;
+    line-height:0em;
+    border-right:2px solid #222222;
+}
+#pages li:last-child{
+    padding-right:0;
+    border-right:none;
+}
+/***********footer***********/
+footer{
+    min-width:44em;
+    font-size:0.9em;
+}
+footer .left{
+    float:left;
+    width:57.5vw;
+    min-width:28em;
+    margin-bottom:0.7em;
+    line-height:1.4em;
+}
+#copyright{
+    margin-top:0.2em;
+    opacity:0.4;
+}
+
+/***********posts***********/
+        article.index{
+            height:54vh;
+            display:inline-block;
+            vertical-align:top;
+            overflow-y:hidden;
+            white-space:normal;
+            margin:0 2em; /*for post types other than photo*/
+        }
+        article.index:first-child{
+            margin-left:0;
+        }
+        article.index:last-child{
+            margin-right:7vw;
+        }
+        article.index.photo{
+            margin:0;/*for photo posts*/
+        }
+        article.permalink{
+            float:left;
+            margin-left:7vw;
+            width:60vw;
+            min-width:250px;
+        }
+/*********** media posts ***********/
+        .index.photo .content img{
+            max-height:54vh;
+            vertical-align:top;
+        }
+        .index.photo .content a{
+            margin-right:1.2em;
+        }
+        .mask{
+            position:absolute;
+            margin-right:4em;
+            max-width:21em;/*250px*/
+            bottom:0;
+            z-index:10;
+            color:white;
+            background: rgba(0,0,0,0.2);
+            padding:1vh 2.5vw;
+            line-height: 1.5em;
+            font-size:0.8em;
+        }
+        .mask a{
+            color:white;
+        }
+        .mask a:hover{
+            color:#529ECC;
+        }
+        .permalink.photo .content img{
+            max-width:65vw;
+            min-width:250px;
+        }
+        .permalink.photo .content a{
+            display:block;
+            margin-bottom:2vh;
+        }
+        .permalink.photo .content a:last-child{
+            margin-bottom:0;
+        }
+/*********** post content ***********/
+        .post .title{
+            font-size:2em;
+            font-weight:bold;
+            line-height:1.2em;
+            margin-top:-0.1em;/*to align with photo posts*/
+            margin-bottom:1em;
+        }
+        .content{
+            font-size:1em;
+            line-height:1.5em;
+        }
+        .content p{
+            margin-bottom:1em;
+        }
+        .content blockquote{
+            margin-bottom:1em;
+        }
+        .chat ul li{
+            margin-bottom:0.5em;
+        }
+        .chat .label{
+            margin-right:0.2em;
+        }
+        .index.audio>iframe, .index.video>iframe{
+            height:45vh;
+        }
+        .caption{
+            font-weight:bold;
+        }
+        .contentSource a{
+            color:#529ECC;
+            font-size:0.9em;
+        }
+/******list style******/
+        .content ul{
+            margin-bottom:0.7em;
+        }
+        .content ol{
+            margin-bottom:0.7em;
+        }
+        .chat .content ul li{
+            margin-left:0;
+            list-style-type:none;
+        }
+        .content ul li{
+            margin-left:1.5em;
+            list-style-type:disc;
+        }
+        .content ol li{
+            margin-left:1.5em;
+            list-style-type:decimal;
+        }
+        .content h1{
+            font-size:1.4em;
+            line-height:1.6em;
+            margin-bottom:0.7em;
+            font-weight:bold;
+        }
+        .content h2{
+            font-size:1.3em;
+            line-height:1.6em;
+            margin-bottom:0.7em;
+            font-weight:bold;
+        }
+        .content h3{
+            font-size:1.2em;
+            line-height:1.6em;
+            margin-bottom:0.7em;
+            font-weight:bold;
+        }
+/***********post meta***********/
+        #meta{
+            float:right;
+            margin-right:7vw;
+            width:16vw;
+            margin-top:-0.25em;
+        }
+        #meta > li{
+            list-style-type:none;
+            padding-bottom:1.2em;
+            text-align:center;
+        }
+        #caption{
+            line-height:1.5em;
+        }
+        #notesBlock{
+        }
+        #count{
+            font-weight:bold;
+            margin-bottom:0.7em;
+        }
+        ol.notes{
+            list-style-type:none;
+        }
+        ol.notes li{
+            text-align:center;
+            font-weight:normal;
+            line-height:1.5em;
+            padding-bottom: 0.5em;
+            font-size:0.9em;
+        }
+        ol.notes li a{
+            color:#529ECC;
+        }
+        .notes img{
+            display:none;
+        }
+        ol.notes li.note .answer_content {
+            font-weight: normal;
+        }
+
+        ol.notes li.note blockquote {
+            border-left:none;
+        }
+        ol.notes li.note blockquote a{
+            color:#222222;
+        }
+</style>
+
+<body> 
+
+<main id="main" class=" index">
+    <article class="post photo  index" id=""> 
+        <div class="content">
+            <p style="font-size:110%;"><b> Antwone Lee Yang </b></p>
+            <br>
+            <p>Antwone is a twenty four year old portrait photographer based in Minneapolis. He is currently pursuing a MS in Physicians Assistant Studies.<br>He hopes to shoot films one day.<br><ul><li>If he were a superhero, he would be able to breathe underwater.</li><li>He listens to The Weeknd, DEAN, Alina Baraz, James Blake, Gregory Alan Isakov, & Common Souls.</li><li>He enjoys walking around the lakes, cruising on his penny board, and graphic design</li><li>His most traumatic experience includes - you'll have to buy him dinner first.</li></ul>Go watch his latest short film <a href="https://www.youtube.com/watch?v=i_7sF1LxDbI" style="color: rgb(0,255,0)"><font color="FF00CC">here.</font></a></p>
+            <br>
+            <br>
+        </div>
+        <div class="content" style="display:none;">     
+        </div>
+    </article>
+</main>
+
+<footer class="index">
+    <div class="left">
+        <div id="copyright">AREYOUEVENREAL 2021</div>
+    </div>
+    <div class="clearFix"></div>
+</footer>
+</body>
+</html>
