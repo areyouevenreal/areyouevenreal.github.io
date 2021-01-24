@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="/favicon.jpg"
+<meta name="description" content="AREYOUEVENREAL" />
+<title>ALY STUDIO</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1"/>
+<meta name="text:Title font" content="Montserrat"/>
+<meta name="text:Content font" content="Montserrat"/>
+<meta name="color:Font color" content="#D3D3D3"/>
+<meta name="text:Google analytics ID" content="UA-154490996-1"/>
+<meta name="text:Copyright" content="AREYOUEVENREAL"/>
+<meta name="if:Show social icons" content="1"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154490996-1"></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:600' rel='stylesheet' type='text/css'>
+
+<style>
+        /***********General Styling ***********/
+        * {margin:0px 0px; padding:0px 0px;}
+        a{
+            color:#D3D3D3;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:none;
+            color:#A9A9A9;
+        }
+        .clearFix{
+            clear:both;
+        }
+        body{
+            background-color:#000000;
+            color:#222222;
+            font-family:'Montserrat',Sans-Serif;
+            font-size:12px;
+        }
+        header{
+            left:7vw;
+            width:85.7vw;
+            height:20vh;
+        }
+        header.index{
+            top:6vh;
+            position:fixed;
+        }
+        header.permalink{
+            margin-top:10vh;
+            position:relative;
+        }
+        footer{
+            left:7vw;
+            width:85.7vw;
+            vertical-align:top;
+        }
+        footer.index{
+            position:fixed;
+            top:94vh;
+        }
+        footer.permalink{
+            margin-top:3vh;
+            position:relative;
+            padding-bottom:4vh;
+        }
+        main.index{
+            top:25vh;
+            left:7vw;
+            height:54vh;
+            position:absolute;
+            white-space:nowrap;
+        }
+        main.permalink{
+            position:relative;
+        }
+/***********header***********/
+        #title{
+            float:left;
+            vertical-align:top;
+            line-height:3em;
+            font-family:'Montserrat',Serif;
+            width:30vw;
+        }
+        #title a{
+            font-size:3em;
+            margin-right: 0.3em;
+        }
+        a#tagTitle{
+            font-size: 1.1em;
+            font-family:'Montserrat',Sans-Serif;
+        }
+        #pages{
+            float:right;
+            text-align:right;
+            list-style-type:none;
+            width:45vw;
+            margin-top:1.4em;
+            font-size:1.1em;
+        }
+        #pages li{
+            display:inline-block;
+            margin-left:0em;
+            margin-bottom:1em;
+            padding-right:0.1em;
+            line-height:0em;
+            border-right:2px solid #222222;
+        }
+        #pages li:last-child{
+            padding-right:0;
+            border-right:none;
+        }
+/***********footer***********/
+        footer{
+            min-width:44em;
+            font-size:0.9em;
+        }
+        footer .left{
+            float:left;
+            width:57.5vw;
+            min-width:28em;
+            margin-bottom:0.7em;
+            line-height:1.4em;
+        }
+        #copyright{
+            margin-top:0.2em;
+            opacity:0.4;
+        }
+/*********** tabs ***********/
+        .tab{
+            position:fixed;
+            height:100vh;
+            width:2.5em;
+            z-index:20;
+            cursor:pointer;
+        }
+        .tab.left{
+            left:0;
+        }
+        .tab.right{
+            right:0;
+            text-align:right;
+        }
+        .tab > div{
+            background-color:rgba(0,0,0,0.1);
+            display:none;
+            height:100vh;
+        }
+        .tab i{
+            margin-top:50vh;
+            font-size:1.7em;
+            color:#999;
+        }
+        .tab.left > div > i{
+            margin-left:0.45em;
+        }
+        .tab.right > div > i{
+            margin-right:0.45em;
+        }
+/***********posts***********/
+        article.index{
+            height:54vh;
+            display:inline-block;
+            vertical-align:top;
+            overflow-y:hidden;
+            white-space:normal;
+            margin:0 2em; /*for post types other than photo*/
+        }
+        article.index:first-child{
+            margin-left:0;
+        }
+        article.index:last-child{
+            margin-right:7vw;
+        }
+        article.index.photo{
+            margin:0;/*for photo posts*/
+            margin-right:7vw;
+        }
+        article.permalink{
+            float:left;
+            margin-left:7vw;
+            width:60vw;
+            min-width:250px;
+        }
+/*********** media posts ***********/
+        .index.photo .content img{
+            max-height:54vh;
+            vertical-align:top;
+        }
+        .index.photo .content a{
+            margin-right:1.2em;
+        }
+        .mask{
+            position:absolute;
+            margin-right:4em;
+            max-width:210em;/*250px*/
+            bottom:0;
+            z-index:10;
+            color:white;
+            background: rgba(0,0,0,0.2);
+            padding:1vh 2.5vw;
+            line-height: 1.5em;
+            font-size:0.8em;
+        }
+        .mask a{
+            color:white;
+        }
+        .mask a:hover{
+            color:#529ECC;
+        }
+        .permalink.photo .content img{
+            max-width:65vw;
+            min-width:250px;
+        }
+        .permalink.photo .content a{
+            display:block;
+            margin-bottom:2vh;
+        }
+        .permalink.photo .content a:last-child{
+            margin-bottom:0;
+        }
+</style>
+
+<body>
+
+<!-- tabs and pagination -->
+<div class="tab left index">
+    <div><i class="fa fa-caret-left"></i></div>
+        </div>
+    <div class="tab right index">
+        <div><i class="fa fa-caret-right"></i></div>
+</div>
+
+<!-- header -->
+<header class="index">
+    <div id="title">
+        <a href="/">ARE YOU EVEN REAL</a>
+    </div>
+    <ul id="pages">
+                <li><a href="/about.html">About</a></li> 
+                <li><a href="/works.html">Works</a></li>
+                <li><a href="/personal.html">Personal</a></li>            
+    </ul>
+    <div class="clearFix"></div>
+
+</header>
+
+<!-- main -->
+<main id="main" class=" index">
+    <article class="post photo  index">
+        <div class="content">
+            <img draggable="false" ondragstart="return false;" src="96.jpg" alt="STUDIO PHOTOS" onContextMenu="return false;"/>
+ 	    <img draggable="false" ondragstart="return false;" src="71.jpg" alt="STUDIO PHOTOGRAPHS" onContextMenu="return false;"/>
+
+        </div>
+        <div class="content" style="display:none;">     
+        </div>
+    </article>
+
+<article class="post photo  index">
+    <div class="content">
+            <img draggable="false" ondragstart="return false;" src="9277.jpg" alt="H1" onContextMenu="return false;"/>
+            <img draggable="false" ondragstart="return false;" src="0931.jpg" alt="photography" onContextMenu="return false;"/>  
+            <img draggable="false" ondragstart="return false;" src="5278.jpg" alt="0H" onContextMenu="return false;"/>
+        </div>
+        <div class="content" style="display:none;">     
+        </div>
+    </article>
+
+<!-- post meta -->
+</main>
+<!-- footer -->
+<footer class="index">
+    <div class="left">
+    <div id="copyright">AREYOUEVENREAL 2021</div>
+    </div>
+    <div class="clearFix"></div>
+</footer>
+</body>
+</html>
